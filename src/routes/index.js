@@ -6,7 +6,7 @@ import Imprimir from "../pages/PainelDevolucao/NfsDevolucao/Imprimir";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Autenticar />,
+    element: <PainelDevolucao />,
   },
   {
     path: "/listadevolucao",
