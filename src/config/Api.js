@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const Axios = axios.create({
-  baseURL: "https://devolucaoback.vercel.app/",
+  baseURL: process.env.URL_RAVEX,
   timeout: 5000,
   headers: {
     Authorization: process.env.RAVEX_LG,
