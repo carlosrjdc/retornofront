@@ -50,7 +50,8 @@ export default function DevolucaoTotal() {
   }
 
   async function AtualizarDadosGerais() {
-    Axios.post(`/notasfiscais/2023-04-04`);
+    const dataHoje = moment(new Date()).format("YYYY-MM-DD");
+    Axios.post(`/notasfiscais/${dataHoje}`);
   }
 
   const Titulos = [
